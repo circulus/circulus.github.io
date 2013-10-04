@@ -2,23 +2,16 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2013-10-04 09:24:37
-categories: jekyll update
+categories: jekyll sitebuilding
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Good news everyone!
 
-Jekyll also offers powerful support for code snippets:
+I've gotten around to finally build a site for my company and a blog for
+myself. After a lot of back-and-forth I decided to go with [gitghub pages][gh-pages].
+I will be capturing my progress right here (kinda meta isn't it?) so
+stay tuned for updates...
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+M1k3
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+[gh-pages]: http://pages.github.com
