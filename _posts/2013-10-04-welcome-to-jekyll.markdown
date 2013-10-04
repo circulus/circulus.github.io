@@ -10,7 +10,8 @@ Good news everyone!
 I've gotten around to finally build a site for my company and a blog for
 myself. After a lot of back-and-forth I decided to go with [gitghub pages][gh-pages].
 I will be capturing my progress right here (kinda meta isn't it?) so
-stay tuned for updates...
+stay tuned for updates. Also I will post anything I find interesting on
+the internets so stay tuned for that also...
 
 M1k3
 
