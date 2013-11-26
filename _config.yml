@@ -1,3 +1,4 @@
 name: Circulus
 markdown: redcarpet
 pygments: true
+future: false
