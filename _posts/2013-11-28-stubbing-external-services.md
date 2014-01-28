@@ -128,8 +128,15 @@ authorized_transaction = Braintree::Subscription.retry_charge(
 # Run the code with fake_braintree
 #=> #<Braintree::Transaction id: "2a55837dd3f2a63a64c23107afecdd95", type: "sale", amount: "10.0", status: "authorized", created_at: nil, credit_card_details: #<token: nil, bin: nil, last_4: nil, card_type: nil, expiration_date: "/", cardholder_name: nil, customer_location: nil, prepaid: nil, healthcare: nil, durbin_regulated: nil, debit: nil, commercial: nil, payroll: nil, country_of_issuance: nil, issuing_bank: nil>, customer_details: #<id: nil, first_name: nil, last_name: nil, email: nil, company: nil, website: nil, phone: nil, fax: nil>, subscription_details: #<Braintree::Transaction::SubscriptionDetails:0x007fd892886ae0>, updated_at: nil>
 
-# Run the code with the read endpoint
+# Run the code with the real endpoint
 #=> #<Braintree::ErrorResult params:{...} errors:<transaction:[(91531) Subscription status must be Past Due in order to retry.]>>
+
+
+authorized_transaction = Braintree::Subscription.retry_charge(subscription_id, 42.0).transaction
+result = Braintree::Transaction.submit_for_settlement(
+  authorized_transaction.id
+)
+#=> true
 ```
 
 To be fair, you cannot retry_charge with the current released version of
